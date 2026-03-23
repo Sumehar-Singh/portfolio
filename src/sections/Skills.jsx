@@ -4,7 +4,7 @@ import {
   SiC, SiCplusplus, SiExpress, SiTailwindcss,
   SiPostgresql, SiMongodb, SiMysql,
   SiJson, SiJsonwebtokens,
-  SiPostman, SiFirebase
+  SiPostman, SiFirebase, SiPython
 } from 'react-icons/si';
 
 import { 
@@ -23,7 +23,8 @@ const skills = [
     techs: [
       { name: 'C', Icon: SiC, color: 'text-blue-500' },
       { name: 'C++', Icon: SiCplusplus, color: 'text-blue-600' },
-      { name: 'JavaScript', Icon: FaJs, color: 'text-yellow-400' }
+      { name: 'JavaScript', Icon: FaJs, color: 'text-yellow-400' },
+      { name: 'Python', Icon: SiPython, color: 'text-blue-400' }
     ]
   },
   { 
