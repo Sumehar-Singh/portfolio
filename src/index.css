@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  /* Professional Navy Blue Palette (#0067B8) */
+  --color-primary-50: #f0f7ff;
+  --color-primary-100: #e0effe;
+  --color-primary-200: #b9dffd;
+  --color-primary-300: #7cc3fb;
+  --color-primary-400: #36a4f7;
+  --color-primary-500: #0067b8;
+  --color-primary-600: #0059a3;
+  --color-primary-700: #004a8b;
+  --color-primary-800: #053f73;
+  --color-primary-900: #0a3560;
+
+  /* Neutral Dark Palette */
+  --color-neutral-50: #f9fafb;
+  --color-neutral-100: #f3f4f6;
+  --color-neutral-200: #e5e7eb;
+  --color-neutral-300: #d1d5db;
+  --color-neutral-400: #9ca3af;
+  --color-neutral-500: #6b7280;
+  --color-neutral-600: #4b5563;
+  --color-neutral-700: #374151;
+  --color-neutral-800: #1f2937;
+  --color-neutral-900: #111827;
+  --color-neutral-950: #030712;
+  
+  --font-sans: "Outfit", sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: #030712;
+    --foreground: #f9fafb;
+    --accent-blue: #3b82f6;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+    background-color: #030712;
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    @apply antialiased selection:bg-primary-500/30 selection:text-white overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .text-brand {
+    @apply text-primary-500;
+  }
+
+  .glass-panel {
+    @apply bg-[#151617] backdrop-blur-xl border border-neutral-800/50 shadow-2xl;
+  }
+
+  /* Decorative elements */
+  .dashed-circle {
+    @apply border-2 border-dashed border-neutral-800 rounded-full;
+  }
+
+  /* Smooth transition utility */
+  .trans-smooth {
+    @apply transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)];
+  }
+}
