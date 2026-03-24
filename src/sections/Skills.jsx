@@ -111,7 +111,7 @@ export default function Skills() {
             transition={{ duration: 0.5 }}
             className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tighter"
           >
-            Technical <span className="text-primary-500">Skills</span>
+            My <span className="text-primary-500">Skills</span>
           </motion.h2>
           <div className="h-1.5 w-24 bg-primary-600 mx-auto rounded-full mb-8"></div>
           <p className="max-w-2xl mx-auto text-xl text-neutral-400 font-medium leading-relaxed">
